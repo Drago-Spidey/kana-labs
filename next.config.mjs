@@ -9,14 +9,6 @@ const nextConfig = {
       // This allows production builds to complete even if there are ESLint errors.
       ignoreDuringBuilds: true,
     },
-    exportPathMap: async function (
-      defaultPathMap,
-      { dev, dir, outDir, distDir, buildId }
-    ) {
-      return {
-        '/': { page: '/' },
-      };
-    },
   };
   
   export default nextConfig;
