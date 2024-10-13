@@ -53,12 +53,12 @@ const OPerpsMain = () => {
         <div className='flex flex-col gap-2'>
         <div className='flex flex-row gap-2'>
           <div className='text-sm text-klFC'>Long Call OPerps Token</div>
-          <img src="/images/info.svg" alt="info"/>
+          <img src="/kana-labs/assets/info.svg" alt="info"/>
         </div>
         <div className='flex flex-col'>
             <input type='text' placeholder='0.00' className='rounded-lg p-4 border border-white/10 bg-klt text-xl font-medium text-klFC overflow-hidden'></input>
           <div className='flex flex-row gap-2 h-[34px] p-2 rounded-lg'>
-          <img src="/images/suggestion-help.svg" alt="suggestion"/>
+          <img src="/kana-labs/assets/suggestion-help.svg" alt="suggestion"/>
           <span className='text-xs font-extrabold text-klc'>Not sure how much to buy?</span>
           </div>
         </div>
@@ -101,7 +101,7 @@ const OPerpsMain = () => {
             <div className='flex flex-col rounded-lg p-2 bg-klBtnBg backdrop-blur-[32px]'>
               <div className='flex justify-between gap-2 w-full'>
                 <span className='text-xs text-klFC w-[142px]'>Next Cycle Max Profit</span>
-                <Image src="/images/info-unfill.svg" alt="info" width={13.33} height={13.33}/>
+                <Image src="/kana-labs/assets/info-unfill.svg" alt="info" width={13.33} height={13.33}/>
               </div>
               <div>
               <span className='text-sm text-white font-extrabold'>750%</span>&nbsp;&nbsp;
@@ -111,7 +111,7 @@ const OPerpsMain = () => {
             <div className='flex flex-col rounded-lg p-2 bg-klBtnBg backdrop-blur-[32px]'>
               <div className='flex justify-between gap-2 w-full'>
                 <span className='text-xs text-klFC w-[142px]'>Next Cycle Max Loss</span>
-                <Image src="/images/info-unfill.svg" alt="info" width={13.33} height={13.33}/>
+                <Image src="/kana-labs/assets/info-unfill.svg" alt="info" width={13.33} height={13.33}/>
               </div>
               <div>
               <span className='text-sm text-white font-extrabold'>50%</span>&nbsp;&nbsp;

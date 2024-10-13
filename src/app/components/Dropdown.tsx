@@ -21,7 +21,7 @@ const Dropdown = () => {
         <span>Additional Details</span>
         {/* Conditionally render the icon based on isOpen state */}
         <img
-          src={isOpen ? "/images/dropup.svg" : "/images/dropdown.svg"}
+          src={isOpen ? "/kana-labs/assets/dropup.svg" : "/kana-labs/assets/dropdown.svg"}
           alt={isOpen ? "Dropup icon" : "Dropdown icon"}
         />
       </div>
@@ -45,7 +45,7 @@ const Dropdown = () => {
           </div>
           <div className="flex flex-row gap-2">
             <span className="text-klc font-extrabold">More routes</span>
-            <img src="/images/share.svg" alt="Share icon" />
+            <img src="/kana-labs/assets/share.svg" alt="Share icon" />
           </div>
         </div>
       </div>

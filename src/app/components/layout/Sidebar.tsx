@@ -30,47 +30,47 @@ const Sidebar = () => {
       {/* Logo Section */}
       <div className="flex flex-col items-center justify-between gap-6">
         <div className="w-8 h-8 my-10">
-          <img src="/images/KanaLabsLogo.svg" alt="kanalabslogo" />
+          <img src="/kana-labs/assets/KanaLabsLogo.svg" alt="kanalabslogo" />
         </div>
 
         {/* Navigation Section */}
         <div className="flex flex-col gap-2">
           <Link href="/Page/Swap">
             <NavItem
-              icon={<img src="/images/swap.svg" alt="Swap" />}
+              icon={<img src="/kana-labs/assets/swap.svg" alt="Swap" />}
               isActive={activeIndex === 0}
               onClick={() => handleNavItemClick(0)}
             />
           </Link>
 
           <NavItem
-            icon={<img src="/images/stake.svg" alt="Stake" />}
+            icon={<img src="/kana-labs/assets/stake.svg" alt="Stake" />}
             isActive={activeIndex === 1}
             onClick={() => handleNavItemClick(1)}
           />
 
           <NavItem
-            icon={<img src="/images/yield.svg" alt="Yield" />}
+            icon={<img src="/kana-labs/assets/yield.svg" alt="Yield" />}
             isActive={activeIndex === 2}
             onClick={() => handleNavItemClick(2)}
           />
 
           <Link href="/Page/OPerps">
             <NavItem
-              icon={<img src="/images/switch.svg" alt="Switch" />}
+              icon={<img src="/kana-labs/assets/switch.svg" alt="Switch" />}
               isActive={activeIndex === 3}
               onClick={() => handleNavItemClick(3)}
             />
           </Link>
 
           <NavItem
-            icon={<img src="/images/trade.svg" alt="Trade" />}
+            icon={<img src="/kana-labs/assets/trade.svg" alt="Trade" />}
             isActive={activeIndex === 4}
             onClick={() => handleNavItemClick(4)}
           />
 
           <NavItem
-            icon={<img src="/images/grid.svg" alt="Grid" />}
+            icon={<img src="/kana-labs/assets/grid.svg" alt="Grid" />}
             isActive={activeIndex === 5}
             onClick={() => handleNavItemClick(5)}
           />
@@ -79,7 +79,7 @@ const Sidebar = () => {
 
       {/* Profile Button */}
       <div className="flex justify-center items-center bg-[#111213] rounded-lg w-14 h-14 mx-auto">
-        <img src="/images/help.svg" alt="Help" />
+        <img src="/kana-labs/assets/help.svg" alt="Help" />
       </div>
     </div>
   );

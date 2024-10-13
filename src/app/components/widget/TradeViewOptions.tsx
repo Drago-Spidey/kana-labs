@@ -20,7 +20,7 @@ const TradeViewOptions = ({ onCycleSelect, onCoinSelect }: TradeViewOptionProps)
   const [isCoinOptionsOpen, setCoinIsOpen] = useState(false);
 
   const coinImages : {[key:string]:string} = {
-ETH : "/images/ethereum.svg", BNB : "/images/bsc.svg", APT : "/images/aptos.svg", SOL : "/images/solana.svg"
+ETH : "/kana-labs/assets/ethereum.svg", BNB : "/kana-labs/assets/bsc.svg", APT : "/kana-labs/assets/aptos.svg", SOL : "/kana-labs/assets/solana.svg"
   }
   const toggleCycleDropdown = () => {
     setCycleIsOpen(!isCycleOptionsOpen);
@@ -58,7 +58,7 @@ ETH : "/images/ethereum.svg", BNB : "/images/bsc.svg", APT : "/images/aptos.svg"
           </span>
 
           <img
-            src={isCoinOptionsOpen ? "/images/dropup.svg" : "/images/dropdown.svg"}
+            src={isCoinOptionsOpen ? "/kana-labs/assets/dropup.svg" : "/kana-labs/assets/dropdown.svg"}
             alt={isCoinOptionsOpen ? "Dropup icon" : "Dropdown icon"}
             className="w-4 h-4"
           />
@@ -88,7 +88,7 @@ ETH : "/images/ethereum.svg", BNB : "/images/bsc.svg", APT : "/images/aptos.svg"
         >
           <span className="text-white/80 text-sm w-full text-start">{selectedCycle}</span>
           <img
-            src={isCycleOptionsOpen ? "/images/dropup.svg" : "/images/dropdown.svg"}
+            src={isCycleOptionsOpen ? "/kana-labs/assets/dropup.svg" : "/kana-labs/assets/dropdown.svg"}
             alt={isCycleOptionsOpen ? "Dropup icon" : "Dropdown icon"}
             className="w-4 h-4"
           />
