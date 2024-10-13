@@ -104,7 +104,7 @@ const PayoffChart = () => {
       <div
         onClick={() => setActiveTab("poolOverview")}
         className={`flex justify-center items-center px-6 py-2 h-full grow cursor-pointer ${
-          activeTab === "poolOverview" ? "bg-white/[6%]" : ""
+          activeTab === "poolOverview" ? "bg-white/[6%] rounded-tr-2xl" : ""
         }`}>
         <span
           className={` ${activeTab === "poolOverview" ? "font-extrabold text-white" : ""}`}>
