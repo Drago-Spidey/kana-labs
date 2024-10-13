@@ -20,7 +20,7 @@ const TradeViewOptions = ({ onCycleSelect, onCoinSelect }: TradeViewOptionProps)
   const [isCoinOptionsOpen, setCoinIsOpen] = useState(false);
 
   const coinImages : {[key:string]:string} = {
-ETH : "/assets/ethereum.svg", BNB : "/assets/bsc.svg", APT : "/assets/aptos.svg", SOL : "/assets/solana.svg"
+ETH : "/images/ethereum.svg", BNB : "/images/bsc.svg", APT : "/images/aptos.svg", SOL : "/images/solana.svg"
   }
   const toggleCycleDropdown = () => {
     setCycleIsOpen(!isCycleOptionsOpen);
@@ -58,7 +58,7 @@ ETH : "/assets/ethereum.svg", BNB : "/assets/bsc.svg", APT : "/assets/aptos.svg"
           </span>
 
           <img
-            src={isCoinOptionsOpen ? "/assets/dropup.svg" : "/assets/dropdown.svg"}
+            src={isCoinOptionsOpen ? "/images/dropup.svg" : "/images/dropdown.svg"}
             alt={isCoinOptionsOpen ? "Dropup icon" : "Dropdown icon"}
             className="w-4 h-4"
           />
@@ -88,7 +88,7 @@ ETH : "/assets/ethereum.svg", BNB : "/assets/bsc.svg", APT : "/assets/aptos.svg"
         >
           <span className="text-white/80 text-sm w-full text-start">{selectedCycle}</span>
           <img
-            src={isCycleOptionsOpen ? "/assets/dropup.svg" : "/assets/dropdown.svg"}
+            src={isCycleOptionsOpen ? "/images/dropup.svg" : "/images/dropdown.svg"}
             alt={isCycleOptionsOpen ? "Dropup icon" : "Dropdown icon"}
             className="w-4 h-4"
           />

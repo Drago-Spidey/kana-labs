@@ -184,7 +184,7 @@ const TradeTable: React.FC = () => {
           </div>
         </div>
         <div className="px-4 cursor-pointer">
-          <img src="/assets/dots-horizontal.svg" alt="" />
+          <img src="/images/dots-horizontal.svg" alt="" />
         </div>
       </div>
 
@@ -193,23 +193,23 @@ const TradeTable: React.FC = () => {
         <div className="grid grid-cols-5 w-full items-center text-xss py-2 px-4 gap-4 bg-klb border-b border-white/10 font-normal text-klFC">
           <div className="flex items-center gap-1 cursor-pointer" onClick={() => handleSort("time")}>
             <span>Time</span>
-            <img src="/assets/chevron-selector-vertical.svg" alt="sort" />
+            <img src="/images/chevron-selector-vertical.svg" alt="sort" />
           </div>
           <div className="flex items-center gap-1 cursor-pointer" onClick={() => handleSort("market")}>
             <span>Market</span>
-            <img src="/assets/chevron-selector-vertical.svg" alt="sort" />
+            <img src="/images/chevron-selector-vertical.svg" alt="sort" />
           </div>
           <div className="flex items-center gap-1 cursor-pointer" onClick={() => handleSort("side")}>
             <span>Side</span>
-            <img src="/assets/chevron-selector-vertical.svg" alt="sort" />
+            <img src="/images/chevron-selector-vertical.svg" alt="sort" />
           </div>
           <div className="flex items-center gap-1 cursor-pointer" onClick={() => handleSort("amount")}>
             <span>Amount</span>
-            <img src="/assets/chevron-selector-vertical.svg" alt="sort" />
+            <img src="/images/chevron-selector-vertical.svg" alt="sort" />
           </div>
           <div className="flex items-center gap-1 cursor-pointer" onClick={() => handleSort("timeTillExecution")}>
             <span>Till at execution</span>
-            <img src="/assets/chevron-selector-vertical.svg" alt="sort" />
+            <img src="/images/chevron-selector-vertical.svg" alt="sort" />
           </div>
         </div>
       )}
@@ -231,7 +231,7 @@ const TradeTable: React.FC = () => {
               <div className="flex flex-col">
                 <div className="flex flex-row items-center gap-2">
                   <img
-                    src={`/assets/${row.icon.toLowerCase()}.svg`}
+                    src={`/images/${row.icon.toLowerCase()}.svg`}
                     alt={`${row.market} Icon`}
                     className="w-4 h-4"
                   />

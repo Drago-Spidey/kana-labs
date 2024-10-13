@@ -21,7 +21,7 @@ const Dropdown = () => {
         <span>Additional Details</span>
         {/* Conditionally render the icon based on isOpen state */}
         <img
-          src={isOpen ? "/assets/dropup.svg" : "/assets/dropdown.svg"}
+          src={isOpen ? "/images/dropup.svg" : "/images/dropdown.svg"}
           alt={isOpen ? "Dropup icon" : "Dropdown icon"}
         />
       </div>
@@ -45,7 +45,7 @@ const Dropdown = () => {
           </div>
           <div className="flex flex-row gap-2">
             <span className="text-klc font-extrabold">More routes</span>
-            <img src="/assets/share.svg" alt="Share icon" />
+            <img src="/images/share.svg" alt="Share icon" />
           </div>
         </div>
       </div>

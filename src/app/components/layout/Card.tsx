@@ -19,15 +19,15 @@ const Swap = () => {
   const [activeIcon, setActiveIcon] = useState<string | null>(null);
 
   const icons = [
-    { id: "aptos", src: "/assets/aptos.svg", alt: "Aptos" },
-    { id: "zksync", src: "/assets/zksync.svg", alt: "zkSync" },
-    { id: "bsc", src: "/assets/bsc.svg", alt: "BSC" },
-    { id: "polygon", src: "/assets/polygon.svg", alt: "Polygon" },
-    { id: "arbitrum", src: "/assets/arbitrum.svg", alt: "Arbitrum" },
-    { id: "avalanche", src: "/assets/avalanche.svg", alt: "Avalanche" },
-    { id: "ethereum", src: "/assets/ethereum.svg", alt: "Ethereum" },
-    { id: "solana", src: "/assets/solana.svg", alt: "Solana" },
-    { id: "sui", src: "/assets/sui-sui-logo.svg", alt: "Sui" },
+    { id: "aptos", src: "/images/aptos.svg", alt: "Aptos" },
+    { id: "zksync", src: "/images/zksync.svg", alt: "zkSync" },
+    { id: "bsc", src: "/images/bsc.svg", alt: "BSC" },
+    { id: "polygon", src: "/images/polygon.svg", alt: "Polygon" },
+    { id: "arbitrum", src: "/images/arbitrum.svg", alt: "Arbitrum" },
+    { id: "avalanche", src: "/images/avalanche.svg", alt: "Avalanche" },
+    { id: "ethereum", src: "/images/ethereum.svg", alt: "Ethereum" },
+    { id: "solana", src: "/images/solana.svg", alt: "Solana" },
+    { id: "sui", src: "/images/sui-sui-logo.svg", alt: "Sui" },
   ];
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const Swap = () => {
                   ? "bg-klbg  border-b-klbg "
                   : "bg-klt "
               } rounded-t-2xl border border-white/10 hover:cursor-pointer`}>
-              <img src="/assets/tabler_arrows-split.svg" alt="" />
+              <img src="/images/tabler_arrows-split.svg" alt="" />
               <span>Same chain</span>
             </div>
             <div
@@ -60,13 +60,13 @@ const Swap = () => {
                   ? "bg-klbg  border-b-klbg"
                   : "bg-klt "
               } rounded-t-2xl border border-white/10 hover:cursor-pointer`}>
-              <img src="/assets/tabler_arrows-shuffle.svg" alt="" />
+              <img src="/images/tabler_arrows-shuffle.svg" alt="" />
               <span>Cross chain</span>
             </div>
           </div>
           <div className="hover:cursor-pointer flex items-center">
             <img
-              src="/assets/Button.svg"
+              src="/images/Button.svg"
               alt=""
               className=" hover:bg-klc/10 rounded-lg"
             />
@@ -85,14 +85,14 @@ const Swap = () => {
               <div className="flex flex-row gap-2">
                 <div className="hover:cursor-pointer hover:bg-klc/10 h-8 w-8 rounded-lg grid place-items-center">
                   <img
-                    src="/assets/refresh.svg"
+                    src="/images/refresh.svg"
                     alt="Refresh"
                     className="h-4 w-4 "
                   />
                 </div>
                 <div className="hover:cursor-pointer hover:bg-klc/10 h-8 w-8 rounded-lg grid place-items-center">
                   <img
-                    src="/assets/setting03.svg"
+                    src="/images/setting03.svg"
                     alt="Settings"
                     className="h-4 w-4 hover:cursor-pointer hover:bg-klc/10 "
                   />
@@ -137,7 +137,7 @@ const Swap = () => {
                   </div>
                   {/* Token and Chain section */}
                   <div className="flex flex-row gap-2 p-4 rounded-2xl bg-klbg border border-white/10 w-[160px]">
-                    <img src="/assets/chain.svg" alt="Chain" />
+                    <img src="/images/chain.svg" alt="Chain" />
                     <div className="flex flex-col">
                       <span className="text-lg font-extrabold">Token</span>
                       <span className="text-xs">
@@ -155,7 +155,7 @@ const Swap = () => {
 
               {/* Switch vertical icon */}
               <div className="border border-white/10 bg-klbg h-10 w-10 flex items-center justify-center rounded-lg absolute transform translate-y-[130px] translate-x-[218px]">
-                <img src="/assets/switch-vertical.svg" alt="Switch" />
+                <img src="/images/switch-vertical.svg" alt="Switch" />
               </div>
 
               {/* Connect to section */}
@@ -176,7 +176,7 @@ const Swap = () => {
                   </div>
                   {/* Token and Chain section */}
                   <div className="flex flex-row gap-2 p-4 rounded-2xl bg-klbg border border-white/10 w-[160px]">
-                    <img src="/assets/chain.svg" alt="Chain" />
+                    <img src="/images/chain.svg" alt="Chain" />
                     <div className="flex flex-col">
                       <span className="text-lg font-extrabold">Token</span>
                       <span className="text-xs">

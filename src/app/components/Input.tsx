@@ -34,7 +34,7 @@ const Input: React.FC = () => {
           className="absolute right-2 top-1/2 transform -translate-y-1/2"
           aria-label="Clear input"
         >
-          <img src="/assets/x-circle.svg" alt=""  /> {/* Replace with your close icon */}
+          <img src="/images/x-circle.svg" alt=""  /> {/* Replace with your close icon */}
         </button>
       )}
     </div>

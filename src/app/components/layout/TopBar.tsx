@@ -19,7 +19,7 @@ const TopBar: React.FC<TopBarProps> = ({ page }) => {
       {page !== "Swap" && (
         <div className="flex flex-col py-4 px-6">
           <span className="text-xs text-klFD ">Powered by</span>
-          <img src="/assets/EthosX.svg" alt="" />
+          <img src="/images/EthosX.svg" alt="" />
         </div>
       )}
 
@@ -28,13 +28,13 @@ const TopBar: React.FC<TopBarProps> = ({ page }) => {
       {page !== "Swap" && (
         <>
         <div className="bg-klBtnBg text-klc font-extrabold px-6 py-2 gap-2 flex rounded-2xl items-center">
-          <img src="/assets/credit-card-down.svg" alt="" />
+          <img src="/images/credit-card-down.svg" alt="" />
           <span className="">Faucet</span>
         </div>
         <div className="bg-klBtnBg text-klc font-extrabold px-6 py-2 gap-2 flex rounded-2xl items-center">
-          <img src="/assets/container.svg" alt="" />
+          <img src="/images/container.svg" alt="" />
           <span className="">Test Net</span>
-          <img src="/assets/chevron-down.svg" alt="" />
+          <img src="/images/chevron-down.svg" alt="" />
         </div>
         </>
       )}
@@ -44,7 +44,7 @@ const TopBar: React.FC<TopBarProps> = ({ page }) => {
         <div className="bg-klBtnBg text-klFC px-6 py-2 gap-3 flex rounded-2xl items-center">
           <div className="f-1 flex gap-2 items-center">
             <div className="icon">
-              <img src="/assets/coins.svg" alt="Coins Icon" />
+              <img src="/images/coins.svg" alt="Coins Icon" />
             </div>
             <div className="t">
               <p className="font-extrabold text-klc">100</p>
@@ -54,7 +54,7 @@ const TopBar: React.FC<TopBarProps> = ({ page }) => {
           <div className="h-6 border border-white opacity-10"></div>
           <div className="f-2 flex gap-2 items-center">
             <div className="icon">
-              <img src="/assets/zap.svg" alt="Zap Icon" />
+              <img src="/images/zap.svg" alt="Zap Icon" />
             </div>
             <div className="t">
               <p className="font-extrabold text-klc">2</p>
@@ -65,17 +65,17 @@ const TopBar: React.FC<TopBarProps> = ({ page }) => {
 
         {/* Wallet Address and Action Buttons */}
         <div className="bg-klBtnBg px-6 py-2 gap-2 flex rounded-2xl items-center">
-          <img src="/assets/fox.png" alt="Fox Icon" className="h-6 w-6" />
+          <img src="/images/fox.png" alt="Fox Icon" className="h-6 w-6" />
           <p className="font-extrabold text-klc max-w-[130px] overflow-hidden text-ellipsis">
             0xwalletaddresxyz
           </p>
           <img
-            src="/assets/copy.svg"
+            src="/images/copy.svg"
             alt="Copy Icon"
             className="p-1 hover:cursor-pointer"
           />
           <img
-            src="/assets/power-off.svg"
+            src="/images/power-off.svg"
             alt="Power Off Icon"
             className="p-1 hover:cursor-pointer"
           />
@@ -83,7 +83,7 @@ const TopBar: React.FC<TopBarProps> = ({ page }) => {
 
         {/* Settings Icon */}
         <div className="bg-klBtnBg px-4 py-4 flex rounded-2xl items-center hover:cursor-pointer">
-          <img src="/assets/settings.svg" alt="Settings Icon" />
+          <img src="/images/settings.svg" alt="Settings Icon" />
         </div>
       </div>
     </div>

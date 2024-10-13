@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     basePath: '/kana-labs', // Replace with your repo name
-    assetPrefix: '/assets/', // Replace with your repo name
+    assetPrefix: '/images/', // Replace with your repo name
     images: {
       unoptimized: true, // GitHub Pages doesn't support Next.js image optimization
     },
