@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'; // Import usePathname
+import Image from 'next/image';
 
 const Sidebar = () => {
   const pathname = usePathname(); // Get the current pathname
@@ -30,7 +31,7 @@ const Sidebar = () => {
       {/* Logo Section */}
       <div className="flex flex-col items-center justify-between gap-6">
         <div className="w-8 h-8 my-10">
-          <img src="/assets/KanaLabsLogo.svg" alt="kanalabslogo" />
+          <Image src="/assets/KanaLabsLogo.svg" alt="kanalabslogo" height={32} width={32}/>
         </div>
 
         {/* Navigation Section */}
