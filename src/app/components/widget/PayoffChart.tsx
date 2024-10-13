@@ -132,6 +132,11 @@ const PayoffChart = () => {
         </div>
       </div>
     )}
+    {(activeTab === "previousCycles" || activeTab === "poolOverview") && (
+        <div className="flex flex-col items-center justify-center w-full p-8">
+          <span className="text-white/80 text-sm">No data available for {activeTab.replace(/([A-Z])/g, ' $1')}</span>
+        </div>
+      )}
   </div>
   
   );
