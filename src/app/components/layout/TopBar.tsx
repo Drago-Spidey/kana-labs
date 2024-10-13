@@ -27,13 +27,13 @@ const TopBar: React.FC<TopBarProps> = ({ page }) => {
       <div className="flex flex-row gap-2">
       {page !== "Swap" && (
         <>
-        <div className="bg-klBtnBg text-klc font-extrabold px-6 py-2 gap-2 flex rounded-2xl items-center">
+        <div className="bg-klBtnBg text-klc font-extrabold px-6 py-2 gap-2 flex rounded-2xl items-center hover:cursor-pointer">
           <img src="/kana-labs/assets/credit-card-down.svg" alt="" />
           <span className="">Faucet</span>
         </div>
-        <div className="bg-klBtnBg text-klc font-extrabold px-6 py-2 gap-2 flex rounded-2xl items-center">
+        <div className="bg-klBtnBg text-klc font-extrabold px-6 py-2 gap-2 flex rounded-2xl items-center hover:cursor-pointer">
           <img src="/kana-labs/assets/container.svg" alt="" />
-          <span className="">Test Net</span>
+          <span className="">Testnet</span>
           <img src="/kana-labs/assets/chevron-down.svg" alt="" />
         </div>
         </>

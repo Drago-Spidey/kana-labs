@@ -126,7 +126,7 @@ const Swap = () => {
                     {/* Pay from text */}
                     <div className="wt flex flex-row gap-2 text-xs">
                       <span>Pay from</span>
-                      <span className="text-klc font-extrabold">
+                      <span className="hover:cursor-pointer text-klc font-extrabold">
                         Connect Wallet
                       </span>
                     </div>
@@ -167,8 +167,8 @@ const Swap = () => {
                   <div className="flex flex-col gap-2 flex-1 justify-between">
                     {/* Receive from text */}
                     <div className="wt flex flex-row gap-2 text-xs">
-                      <span>Receive from</span>
-                      <span className="text-klc font-extrabold">
+                      <span>Receive to</span>
+                      <span className="hover:cursor-pointer text-klc font-extrabold">
                         Connect Wallet
                       </span>
                     </div>

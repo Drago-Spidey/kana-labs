@@ -8,9 +8,9 @@ const Input: React.FC = () => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     // Allow only numeric values (including decimals)
     const value = event.target.value;
-
+    const regex = /^(?:\d{0,16}|\d{0,16}\.\d{0,3})?$/;
     // Use a regular expression to validate the input
-    if (/^\d*\.?\d*$/.test(value)) {
+    if (regex.test(value)) {
       setInputValue(value);
     }
   };

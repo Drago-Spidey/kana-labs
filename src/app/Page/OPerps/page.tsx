@@ -36,7 +36,7 @@ const OPerps: React.FC = () => {
     <div className="flex flex-row w-full gap-4 ">
       
       {/* Chart Section */}
-      <div className="chart flex flex-col grow gap-4 h-screen overflow-y-scroll no-scrollbar ">
+      <div className="chart flex flex-col grow gap-4">
       <TradeViewOptions
     onCycleSelect={handleCycleSelect}
     onCoinSelect={handleCoinSelect}
@@ -73,7 +73,7 @@ const OPerps: React.FC = () => {
       </div>
 
       {/* Right Side Section */}
-      <div className="rside flex flex-col gap-4 max-w-[436px] h-screen overflow-y-scroll no-scrollbar">
+      <div className="rside flex flex-col gap-4 max-w-[436px]">
         <OPerpsMain />
         <PayoffChart />
       </div>
