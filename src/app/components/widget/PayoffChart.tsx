@@ -44,6 +44,9 @@ const PayoffChart = () => {
       toolbar: {
         show: false,
       },
+      zoom: {
+        enabled: false, // Disable zooming
+      },
     },
     stroke: {
       curve: "straight", // Change this to 'straight' for a straight line
