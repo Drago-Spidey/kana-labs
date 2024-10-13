@@ -94,13 +94,13 @@ const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               label="Buy"
               onClick={handleClick}
               type="primary"
-              width="404px"
+              width="50%"
             />
             <Button
               label="Sell"
               onClick={handleClick}
               type="secondary"
-              width="404px"
+              width="50%"
             />
           </div>
           <div className='flex flex-col gap-4 rounded-2xl bg-kle p-5 pr-4 pl-4'>
