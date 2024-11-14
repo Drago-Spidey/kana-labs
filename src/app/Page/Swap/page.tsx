@@ -1,6 +1,7 @@
 "use client";
 
 import CustomButton from "@/app/components/buttons/CustomButton";
+import KanaButton from "@/app/components/buttons/KanaButton";
 import Dropdown from "@/app/components/Dropdown";
 import Input from "@/app/components/Input";
 import React, { useEffect, useState } from "react";
@@ -204,11 +205,11 @@ const Swap = () => {
 
             {/* Swap button */}
             <div className="mt-4">
-              <CustomButton
+              <KanaButton
                 label="Swap now"
                 onClick={handleClick}
-                type="secondary"
-                width="488px" // Custom width
+                type="primary"
+                width="100%" // Custom width
                 // Custom height
               />
             </div>
