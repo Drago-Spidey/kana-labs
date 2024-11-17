@@ -33,22 +33,22 @@ const KanaButton: React.FC<KanaButtonProps> = ({
   const typeStyles = {
     primary: {
       default: "bg-darkGray-500 text-teal-400 border-teal-400 shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_5px_0px_0px_#0E9384]",
-      hover: "hover:bg-klblack-500 hover:text-teal-200 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#0E9384]",
+      hover: "hover:bg-klblack-500 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#0E9384]",
       active: "active:bg-klblack-500 active:text-teal-600 active:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_3px_0px_0px_#0E9384]",
     },
     secondary: {
       default: "bg-darkGray-500 text-cyan-400 border-cyan-400 shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_5px_0px_0px_#088AB2]",
-      hover: "hover:bg-klblack-500 hover:text-cyan-200 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#088AB2]",
+      hover: "hover:bg-klblack-500 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#088AB2]",
       active: "active:bg-klblack-500 active:text-cyan-600 active:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_3px_0px_0px_#088AB2]",
     },
     warning: {
       default: "bg-darkGray-500 text-orange-400 border-orange-400 shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_5px_0px_0px_#DC6803]",
-      hover: "hover:bg-klblack-500 hover:text-orange-200 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#DC6803]",
+      hover: "hover:bg-klblack-500 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#DC6803]",
       active: "active:bg-klblack-500 active:text-orange-600 active:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_3px_0px_0px_#DC6803]",
     },
     danger: {
       default: "bg-darkGray-500 text-red-400 border-red-400 shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_5px_0px_0px_#D92D20]",
-      hover: "hover:bg-klblack-500 hover:text-red-200 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#D92D20]",
+      hover: "hover:bg-klblack-500 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#D92D20]",
       active: "active:bg-klblack-500 active:text-red-600 active:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_3px_0px_0px_#D92D20]",
     },
 

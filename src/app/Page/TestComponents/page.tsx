@@ -5,7 +5,12 @@ import React, { useState } from "react";
 import KanaButton from "@/app/components/buttons/KanaButton";
 import KanaFillButton from "@/app/components/buttons/KanaFillButton";
 import KanaOutlineButton from "@/app/components/buttons/KanaOutlineButton";
-
+import OnChainToken from "@/app/components/buttons/OnChainToken";
+import OnChain from "@/app/components/buttons/OnChain";
+import DefaultSmall from "../../../../public/assets/default_small.svg";
+import DefaultImg from "../../../../public/assets/default.svg";
+import ContainerImg from "../../../../public/assets/container.svg";
+import KanaHeaderButton from "@/app/components/buttons/KanaHeaderButton";
 const TestComponents: React.FC = () => {
   return (
     <div className="flex flex-col w-full gap-12 ">
@@ -26,6 +31,19 @@ const TestComponents: React.FC = () => {
         <KanaOutlineButton label={"Secondary Button"} type="secondary" onClick={() => { }} />
         <KanaOutlineButton label={"Warning Button"} type="warning" onClick={() => { }} />
         <KanaOutlineButton label={"Danger Button"} type="danger" onClick={() => { }} />
+      </div>
+      <div className="flex flex-row w-full gap-4 ">
+        <KanaHeaderButton label={"Primary Button"} type="default" size="large" leftIcon={ContainerImg} onClick={() => { }} />
+        <KanaHeaderButton label={"Secondary Button"} type="default" size="large" rightIcon={ContainerImg} onClick={() => { }} />
+        <KanaHeaderButton label={"Warning Button"} type="default" size="large" rightIcon={ContainerImg} onClick={() => { }} />
+        <KanaHeaderButton label={"Danger Button"} type="default" size="large" leftIcon={ContainerImg} rightIcon={ContainerImg} onClick={() => { }} />
+      </div>
+      <div className="flex flex-row w-full gap-4 ">
+      <OnChainToken onChainImage={DefaultImg} baseChainImage={DefaultSmall} onChainName={"Token"} baseChainName={"Chain"} ></OnChainToken>
+      <OnChainToken onChainImage={DefaultImg} baseChainImage={DefaultSmall} onChainName={"Token"} baseChainName={"Chain"} ></OnChainToken>
+      <OnChainToken onChainImage={DefaultImg} baseChainImage={DefaultSmall} onChainName={"Token"} baseChainName={"Chain"} ></OnChainToken>
+      <OnChainToken onChainImage={DefaultImg} baseChainImage={DefaultSmall} onChainName={"Token"} baseChainName={"Chain"} ></OnChainToken>
+
       </div>
     </div>
 

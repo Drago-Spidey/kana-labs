@@ -83,7 +83,6 @@ const KanaFillButton: React.FC<KanaFillButtonProps> = ({
       style={{
         width, // Custom width
         height, // Custom height
-        borderRadius: 'var(--smooth-corners, 0.5em)'
       }}
     >
       {icon && <span>{icon}</span>}
