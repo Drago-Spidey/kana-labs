@@ -188,7 +188,7 @@ const Swap = () => {
                     </div>
                   </div>
                 </div>
-                {/* Display balance */}
+                {/* Display balance  */}
                 <div className="flex flex-row justify-between text-xs py-2">
                   <div className="flex flex-row gap-2">
                     <span>USD</span>
