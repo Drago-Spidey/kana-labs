@@ -6,8 +6,7 @@ import Dropdown from "@/app/components/Dropdown";
 import Input from "@/app/components/Input";
 import React, { useEffect, useState } from "react";
 
-// Import your SVGs from the assets folder
-
+// Import your SVGs from the assets folders
 const Swap = () => {
   function handleClick(): void {
     //  throw new Error("Function not implemented.");
