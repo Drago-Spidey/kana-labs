@@ -17,7 +17,8 @@
     "react-apexcharts": "^1.4.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
-    "smooth-corners": "^1.0.8"
+    "smooth-corners": "^1.0.8",
+    "zustand": "^5.0.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

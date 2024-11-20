@@ -10,7 +10,7 @@ interface OnChainTokenProps {
 }
 
 const OnChainToken: React.FC<OnChainTokenProps> = ({
-  onChainImage,
+  onChainImage, 
   baseChainImage,
   onChainName,
   baseChainName,

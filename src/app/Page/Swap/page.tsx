@@ -5,9 +5,10 @@ import KanaButton from "@/app/components/buttons/KanaButton";
 import OnChainToken from "@/app/components/buttons/OnChainToken";
 import Dropdown from "@/app/components/Dropdown";
 import Input from "@/app/components/Input";
-import React, { useEffect, useState } from "react";
 import DefaultSmall from "../../../../public/assets/default_small.svg";
 import DefaultImg from "../../../../public/assets/default.svg";
+import React, { useEffect, useState } from "react";
+
 
 // Import your SVGs from the assets 
 const Swap = () => {

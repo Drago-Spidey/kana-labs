@@ -1,4 +1,5 @@
 import React from "react";
+import useStore from '../../store/index';
 
 interface KanaButtonProps {
   label: string;
@@ -21,6 +22,7 @@ const KanaButton: React.FC<KanaButtonProps> = ({
   onClick,
   buttonType = "button",
 }) => {
+  const { isDarkMode } = useStore();
 
   const sizeClasses = {
     small: "px-4 py-2 text-sm",
@@ -33,6 +35,11 @@ const KanaButton: React.FC<KanaButtonProps> = ({
   const typeStyles = {
     primary: {
       default: "bg-darkGray-500  text-teal-400 border-teal-400 shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_5px_0px_0px_#0E9384]",
+      hover: "hover:bg-klblack-500 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#0E9384]",
+      active: "active:bg-klblack-500 active:text-teal-600 active:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_3px_0px_0px_#0E9384]",
+    },
+    primaryLight: {
+      default: "bg-darkGray-500 text-teal-400 border-teal-400 shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_5px_0px_0px_#0E9384]",
       hover: "hover:bg-klblack-500 hover:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_7px_0px_0px_#0E9384]",
       active: "active:bg-klblack-500 active:text-teal-600 active:shadow-[0px_10px_8px_0px_#00FFFF1A,0px_4px_8px_0px_#00000026,0px_3px_0px_0px_#0E9384]",
     },
@@ -75,6 +82,7 @@ const KanaButton: React.FC<KanaButtonProps> = ({
   `;
 
   return (
+    
     <button
       type={buttonType}
       onClick={onClick}
