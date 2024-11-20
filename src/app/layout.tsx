@@ -7,6 +7,8 @@ import TopBar from "./components/layout/TopBar";
 import Sidebar from "./components/layout/Sidebar";
 import { usePathname } from "next/navigation";
 import { ThemeProvider } from "next-themes";
+import useStore from './store/index';
+
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -34,7 +36,8 @@ export default function RootLayout({
   const page: PageType = validPages.includes(currentPage as PageType)
     ? (currentPage as PageType)
     : "Swap"; // Default to "Swap" if not valid // Default to "Swap"
-
+    const { isDarkMode } = useStore();
+    const bgColor : string = isDarkMode?"bg-klb":"bg-klwhite-800";
   return (
     <html lang="en">
       <head>
@@ -44,7 +47,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${urbanist.className} ${manrope.className} bg-klb h-full w-full`}>
+        className={`${urbanist.className} ${manrope.className} ${bgColor} h-full w-full`}>
         <ThemeProvider attribute="class">
           <div className="flex flex-row">
             <Sidebar /> {/* Sidebar fixed */}

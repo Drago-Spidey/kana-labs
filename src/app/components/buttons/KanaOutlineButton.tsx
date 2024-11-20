@@ -47,8 +47,8 @@ const KanaButton: React.FC<KanaButtonProps> = ({
         active: "active:bg-klblack-500 active:text-orange-600 active:border-orange-600",
       },
       danger: {
-        default: "bg-darkGray-500 text-red-400 border-red-400 border-red-400",
-        hover: "hover:bg-klblack-500 hover:text-red-200 hover:border-red-200",
+        default: "bg-darkGray-500 text-red-500 border-red-500 border-red-500",
+        hover: "hover:bg-klblack-500 hover:text-red-400 hover:border-red-400",
         active: "active:bg-klblack-500 active:text-red-600 active:border-red-600",
       },
    

@@ -49,8 +49,8 @@ const KanaFillButton: React.FC<KanaFillButtonProps> = ({
         active: "active:bg-orange-600",
       },
     danger: {
-        default: "bg-red-400 text-darkGray-500 ",
-        hover: "hover:bg-red-200",
+        default: "bg-red-500 text-darkGray-500 ",
+        hover: "hover:bg-red-400",
         active: "active:bg-red-600",
     },
    

@@ -160,6 +160,7 @@ const config: Config = {
           600: '#BBBBBB',
           700: '#D2D2D2',
           800: '#E8E8E8',
+          850: '#FCFDFE',
           900: '#FFFFFF',
         },
         
