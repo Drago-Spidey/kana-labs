@@ -7,8 +7,8 @@ interface KanaHeaderButtonProps {
   size?: "small" | "medium" | "large";
   width?: string;
   height?: string;
-  leftIcon?: string | StaticImport; // Left icon prop
-  rightIcon?: string | StaticImport; // Right icon prop
+  leftIcon?: React.ReactNode; // Left icon prop
+  rightIcon?: React.ReactNode; // Right icon prop
   type?: "default" | "primary" | "secondary" | "warning" | "danger";
   onClick?: () => void;
   buttonType?: "button" | "submit" | "reset";
@@ -87,9 +87,9 @@ const KanaHeaderButton: React.FC<KanaHeaderButtonProps> = ({
         height, // Custom height         borderRadius: 'var(--smooth-corners, 0.5em)',
       }}
     >
-      {leftIcon && <Image src={leftIcon} alt="" />}
+      {leftIcon}
       <span>{label}</span>
-      {rightIcon && <Image src={rightIcon} alt="" />}
+      {rightIcon}
     </button>
   );
 };

@@ -2,9 +2,12 @@
 
 import CustomButton from "@/app/components/buttons/CustomButton";
 import KanaButton from "@/app/components/buttons/KanaButton";
+import OnChainToken from "@/app/components/buttons/OnChainToken";
 import Dropdown from "@/app/components/Dropdown";
 import Input from "@/app/components/Input";
 import React, { useEffect, useState } from "react";
+import DefaultSmall from "../../../../public/assets/default_small.svg";
+import DefaultImg from "../../../../public/assets/default.svg";
 
 // Import your SVGs from the assets 
 const Swap = () => {
@@ -121,7 +124,7 @@ const Swap = () => {
             <div className="connectW flex flex-col gap-3">
               {/* Pay from section */}
               <div className="flex flex-col bg-kle p-4 rounded-2xl border border-white/10">
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-col-reverse md:flex-row gap-4">
                   <div className="flex flex-col gap-2 flex-1 justify-between">
                     {/* Pay from text */}
                     <div className="wt flex flex-row gap-2 text-xs">
@@ -136,14 +139,8 @@ const Swap = () => {
                     </div>
                   </div>
                   {/* Token and Chain section */}
-                  <div className="flex flex-row gap-2 p-4 rounded-2xl bg-klbg border border-white/10 w-[160px]">
-                    <img src="/kana-labs/assets/chain.svg" alt="Chain" />
-                    <div className="flex flex-col">
-                      <span className="text-lg font-extrabold">Token</span>
-                      <span className="text-xs">
-                        on <b>Chain</b>
-                      </span>
-                    </div>
+                  <div className="lg:w-[160px]">
+                  <OnChainToken onChainImage={<DefaultImg/>} baseChainImage={<DefaultSmall/>} onChainName={"Token"} baseChainName={"Chain"} />
                   </div>
                 </div>
                 {/* Display balance */}

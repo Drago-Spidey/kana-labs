@@ -9,6 +9,13 @@ const nextConfig = {
       // This allows production builds to complete even if there are ESLint errors.
       ignoreDuringBuilds: true,
     },
+    webpack(config) {
+      config.module.rules.push({
+        test: /\.svg$/, // Test for SVG files
+        use: ['@svgr/webpack'], // Use SVGR to import as React component
+      });
+      return config;
+    },
   };
   
   export default nextConfig;

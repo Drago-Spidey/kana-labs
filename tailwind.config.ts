@@ -3,6 +3,8 @@ import type { Config } from "tailwindcss";
 const plugin = require('tailwindcss/plugin');
 
 const config: Config = {
+
+
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,6 +12,7 @@ const config: Config = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
