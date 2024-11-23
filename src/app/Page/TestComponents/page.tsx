@@ -18,27 +18,27 @@ const TestComponents: React.FC = () => {
         <KanaButton label={"Primary Button"} type="primary" onClick={() => { }} />
         <KanaButton label={"Secondary Button"} type="secondary" onClick={() => { }} />
         <KanaButton label={"Warning Button"} type="warning" onClick={() => { }} />
-        <KanaButton label={"Danger Button"} type="danger" onClick={() => { }} />
+        <KanaButton label={"Danger Button"} type="danger" leftIcon={< ContainerImg />} rightIcon={< ContainerImg />}  onClick={() => { }} />
       </div>
       <div className="flex flex-row w-full gap-4 ">
         <KanaFillButton label={"Primary Button"} type="primary" onClick={() => { }} />
         <KanaFillButton label={"Secondary Button"} type="secondary" onClick={() => { }} />
         <KanaFillButton label={"Warning Button"} type="warning" onClick={() => { }} />
-        <KanaFillButton label={"Danger Button"} type="danger" onClick={() => { }} />
+        <KanaFillButton label={"Danger Button"} type="danger" leftIcon={< ContainerImg />} rightIcon={< ContainerImg />}  onClick={() => { }} />
       </div>
       <div className="flex flex-row w-full gap-4 ">
         <KanaOutlineButton label={"Primary Button"} type="primary" onClick={() => { }} />
         <KanaOutlineButton label={"Secondary Button"} type="secondary" onClick={() => { }} />
         <KanaOutlineButton label={"Warning Button"} type="warning" onClick={() => { }} />
-        <KanaOutlineButton label={"Danger Button"} type="danger" onClick={() => { }} />
+        <KanaOutlineButton label={"Danger Button"} type="danger" leftIcon={< ContainerImg />} rightIcon={< ContainerImg />}  onClick={() => { }} />
       </div>
       <div className="flex flex-row w-full gap-4 ">
-        <KanaHeaderButton label={"Primary Button"} type="default" size="large" leftIcon={<ContainerImg />} onClick={() => { }} />
-        <KanaHeaderButton label={"Secondary Button"} type="default" size="large" rightIcon={< ContainerImg />} onClick={() => { }} />
-        <KanaHeaderButton label={"Warning Button"} type="default" size="large" rightIcon={< ContainerImg />} onClick={() => { }} />
-        <KanaHeaderButton label={"Danger Button"} type="default" size="large" leftIcon={< ContainerImg />} rightIcon={< ContainerImg />} onClick={() => { }} />
+        <KanaHeaderButton label={"Primary Button"} type="primary" size="large" leftIcon={<ContainerImg />} onClick={() => { }} />
+        <KanaHeaderButton label={"Secondary Button"} type="primary" size="large" rightIcon={< ContainerImg />} onClick={() => { }} />
+        <KanaHeaderButton label={"Warning Button"} type="primary" size="large" rightIcon={< ContainerImg />} onClick={() => { }} />
+        <KanaHeaderButton label={"Danger Button"} type="primary" size="large" leftIcon={< ContainerImg />} rightIcon={< ContainerImg />} onClick={() => { }} />
       </div>
-      <div className="flex flex-row w-full gap-4 ">
+      <div className="flex flex-row w-full gap-4 p-4 mb-16 rounded-2xl  bg-[#F2F9F9]">
       <OnChainToken onChainImage={<DefaultImg/>} baseChainImage={<DefaultSmall/>} onChainName={"Token"} baseChainName={"Chain"} ></OnChainToken>
       <OnChainToken onChainImage={<DefaultImg/>} baseChainImage={<DefaultSmall/>} onChainName={"Token"} baseChainName={"Chain"} ></OnChainToken>
       <OnChainToken onChainImage={<DefaultImg/>} baseChainImage={<DefaultSmall/>} onChainName={"Token"} baseChainName={"Chain"} ></OnChainToken>

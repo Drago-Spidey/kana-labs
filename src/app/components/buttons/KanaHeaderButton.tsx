@@ -1,6 +1,5 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Image from "next/image";
 import React from "react";
+import useStore from '../../store/index';
 
 interface KanaHeaderButtonProps {
   label: string;
@@ -25,7 +24,7 @@ const KanaHeaderButton: React.FC<KanaHeaderButtonProps> = ({
   onClick,
   buttonType = "button",
 }) => {
-
+  const { isDarkMode } = useStore();
   const sizeClasses = {
     small: "px-2 py-1 text-sm",
     medium: "px-4 py-2 text-sm rounded-lg",
@@ -41,6 +40,11 @@ const KanaHeaderButton: React.FC<KanaHeaderButtonProps> = ({
     primary: {
       default: "bg-teal-400 text-darkGray-500 ",
       hover: "hover:bg-teal-200 ",
+      active: "active:bg-teal-600 ",
+    },
+    primarylight: {
+      default: "bg-[#eff7f8] text-teal-600 ",
+      hover: "hover:bg-[#e4f2f3]",
       active: "active:bg-teal-600 ",
     },
     secondary: {
@@ -60,7 +64,13 @@ const KanaHeaderButton: React.FC<KanaHeaderButtonProps> = ({
     },
   };
 
-  const { default: defaultStyle, active, hover } = typeStyles[type];
+  const theme: string = isDarkMode ? "" : "light";
+  // Generate the full key and ensure it exists in typeStyles
+  const styleKey = `${type}${theme}` as keyof typeof typeStyles;
+
+  // Provide fallback styles in case the key doesn't exist
+  const { default: defaultStyle, hover, active } =
+    typeStyles[styleKey] || typeStyles.primary;
 
   const buttonClasses = `
     ${sizeClasses[size]}
