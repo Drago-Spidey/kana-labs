@@ -9,7 +9,7 @@ interface ModelProps  {
 
 }
 
-const Modal: React.FC<ModelProps> = ( {isModalOpen, setIsModalOpen}) => {
+const KanaModal: React.FC<ModelProps> = ( {isModalOpen, setIsModalOpen}) => {
   // State to manage modal visibility
  
   const toggleModal = () => {
@@ -28,7 +28,7 @@ const Modal: React.FC<ModelProps> = ( {isModalOpen, setIsModalOpen}) => {
                 Preferences
               </div>
               <button onClick={toggleModal}>
-                <Image src={Xcircle} alt='Close Icon' />
+                <Xcircle />
               </button>
             </div>
            <div className='p-4'>
@@ -41,4 +41,4 @@ const Modal: React.FC<ModelProps> = ( {isModalOpen, setIsModalOpen}) => {
   );
 };
 
-export default Modal;
+export default KanaModal;

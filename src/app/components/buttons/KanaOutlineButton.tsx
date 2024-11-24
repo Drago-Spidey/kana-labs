@@ -13,7 +13,7 @@ interface KanaButtonProps {
   buttonType?: "button" | "submit" | "reset";
 }
 
-const KanaButton: React.FC<KanaButtonProps> = ({
+const KanaOutlineButton: React.FC<KanaButtonProps> = ({
   label,
   size = "medium",
   width = "auto",
@@ -28,7 +28,7 @@ const KanaButton: React.FC<KanaButtonProps> = ({
   const { isDarkMode } = useStore();
 
     const sizeClasses = {
-      small: "px-2 py-1 text-sm",
+      small: "px-4 py-2 text-xs",
       medium: "px-4 py-2 text-sm",
       large: "px-6 py-4 text-md",
   };
@@ -123,4 +123,4 @@ const KanaButton: React.FC<KanaButtonProps> = ({
   );
 };
 
-export default KanaButton;
+export default KanaOutlineButton;
