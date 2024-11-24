@@ -17,43 +17,14 @@ import KanaHeaderButton from "@/app/components/buttons/KanaHeaderButton";
 import ThemeSwitcher from "@/app/themeSwitcher";
 import ActionCard from "@/app/components/buttons/ActionCard";
 import DiscountCard from "@/app/components/buttons/DiscountCard";
-import KanaModal from "@/app/components/buttons/KanaModal";
 const TestComponents: React.FC = () => {
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
-
-
   return (
     <div className="flex flex-col w-full gap-12 ">
-      <KanaModal isModalOpen={false} setIsModalOpen={function (open: boolean): void {
-        throw new Error("Function not implemented.");
-      } } />
       <div className="flex flex-row w-full gap-4 ">
-        <KanaButton
-          label={"Primary Button"}
-          type="primary"
-          onClick={() => {toggleModal}}
-        />
-        <KanaButton
-          label={"Secondary Button"}
-          type="secondary"
-          onClick={() => {}}
-        />
-        <KanaButton
-          label={"Warning Button"}
-          type="warning"
-          onClick={() => {}}
-        />
-        <KanaButton
-          label={"Danger Button"}
-          type="danger"
-          leftIcon={<ContainerImg />}
-          rightIcon={<ContainerImg />}
-          onClick={() => {}}
-        />
+        <KanaButton label={"Primary Button"} type="primary" onClick={() => { }} />
+        <KanaButton label={"Secondary Button"} type="secondary" onClick={() => { }} />
+        <KanaButton label={"Warning Button"} type="warning" onClick={() => { }} />
+        <KanaButton label={"Danger Button"} type="danger" leftIcon={< ContainerImg />} rightIcon={< ContainerImg />}  onClick={() => { }} />
       </div>
       <div className="flex flex-row w-full gap-4 ">
         <KanaFillButton
@@ -104,35 +75,10 @@ const TestComponents: React.FC = () => {
         />
       </div>
       <div className="flex flex-row w-full gap-4 ">
-        <KanaHeaderButton
-          label={"Primary Button"}
-          type="primary"
-          size="large"
-          leftIcon={<ContainerImg />}
-          onClick={() => {}}
-        />
-        <KanaHeaderButton
-          label={"Secondary Button"}
-          type="primary"
-          size="large"
-          rightIcon={<ContainerImg />}
-          onClick={() => {}}
-        />
-        <KanaHeaderButton
-          label={"Warning Button"}
-          type="primary"
-          size="large"
-          rightIcon={<ContainerImg />}
-          onClick={() => {}}
-        />
-        <KanaHeaderButton
-          label={"Danger Button"}
-          type="primary"
-          size="large"
-          leftIcon={<ContainerImg />}
-          rightIcon={<ContainerImg />}
-          onClick={() => {}}
-        />
+        <KanaHeaderButton label={"Primary Button"}   size="large" leftIcon={<ContainerImg />} onClick={() => { }} />
+        <KanaHeaderButton label={"Secondary Button"} size="large" rightIcon={< ContainerImg />} onClick={() => { }} />
+        <KanaHeaderButton label={"Warning Button"} size="large" rightIcon={< ContainerImg />} onClick={() => { }} />
+        <KanaHeaderButton label={"Danger Button"} size="large" leftIcon={< ContainerImg />} rightIcon={< ContainerImg />} onClick={() => { }} />
       </div>
       <div className="flex flex-row w-full gap-4 p-4 mb-16 rounded-2xl  bg-[#F2F9F9]">
         <OnChainToken

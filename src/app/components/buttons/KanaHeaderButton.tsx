@@ -1,5 +1,5 @@
 import React from "react";
-import useStore from '../../store/index';
+import useStore from "../../store/index";
 
 interface KanaHeaderButtonProps {
   label: string;
@@ -8,9 +8,9 @@ interface KanaHeaderButtonProps {
   height?: string;
   leftIcon?: React.ReactNode; // Left icon prop
   rightIcon?: React.ReactNode; // Right icon prop
-  type?: "default" | "primary" | "secondary" | "warning" | "danger";
   onClick?: () => void;
   buttonType?: "button" | "submit" | "reset";
+  type?: "default"; // Always "default", auto-adjusts based on theme
 }
 
 const KanaHeaderButton: React.FC<KanaHeaderButtonProps> = ({
@@ -18,13 +18,14 @@ const KanaHeaderButton: React.FC<KanaHeaderButtonProps> = ({
   size = "medium",
   width = "auto",
   height = "auto",
-  type = "primary",
+  type = "default", // Default to "default"
   leftIcon,
   rightIcon,
   onClick,
   buttonType = "button",
 }) => {
   const { isDarkMode } = useStore();
+
   const sizeClasses = {
     small: "px-2 py-1 text-sm",
     medium: "px-4 py-2 text-sm rounded-lg",
@@ -37,40 +38,16 @@ const KanaHeaderButton: React.FC<KanaHeaderButtonProps> = ({
       hover: "hover:text-teal-200 ",
       active: "active:text-teal-600 ",
     },
-    primary: {
-      default: "bg-teal-400 text-darkGray-500 ",
-      hover: "hover:bg-teal-200 ",
-      active: "active:bg-teal-600 ",
-    },
-    primarylight: {
+    defaultlight: {
       default: "bg-[#eff7f8] text-teal-600 ",
-      hover: "hover:bg-[#e4f2f3]",
-      active: "active:bg-teal-600 ",
-    },
-    secondary: {
-      default: "bg-cyan-400 text-darkGray-500 ",
-      hover: "hover:bg-cyan-200 ",
-      active: "active:bg-cyan-600 ",
-    },
-    warning: {
-      default: "bg-orange-400 text-darkGray-500",
-      hover: "hover:bg-orange-200 ",
-      active: "active:bg-orange-600 ",
-    },
-    danger: {
-      default: "bg-red-400 text-darkGray-500 ",
-      hover: "hover:bg-red-200 ",
-      active: "active:bg-red-600 ",
+      hover: "hover:bg-[#e4f2f3] ",
+      active: "active:bg-[#eff7f8] ",
     },
   };
 
-  const theme: string = isDarkMode ? "" : "light";
-  // Generate the full key and ensure it exists in typeStyles
-  const styleKey = `${type}${theme}` as keyof typeof typeStyles;
-
-  // Provide fallback styles in case the key doesn't exist
-  const { default: defaultStyle, hover, active } =
-    typeStyles[styleKey] || typeStyles.primary;
+  // Automatically switch styles based on `isDarkMode`
+  const activeType = isDarkMode ? "default" : "defaultlight";
+  const { default: defaultStyle, hover, active } = typeStyles[activeType];
 
   const buttonClasses = `
     ${sizeClasses[size]}
@@ -94,7 +71,7 @@ const KanaHeaderButton: React.FC<KanaHeaderButtonProps> = ({
       className={buttonClasses}
       style={{
         width, // Custom width
-        height, // Custom height         borderRadius: 'var(--smooth-corners, 0.5em)',
+        height, // Custom height
       }}
     >
       {leftIcon}
