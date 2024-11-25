@@ -6,7 +6,7 @@ interface StoreState {
 }
 
 const useStore = create<StoreState>((set) => ({
-  isDarkMode: true,
+  isDarkMode: false,
   toggleDarkMode: () => set((state) => ({ isDarkMode: !state.isDarkMode })),
 }));
 

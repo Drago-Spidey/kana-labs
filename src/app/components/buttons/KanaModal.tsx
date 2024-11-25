@@ -27,7 +27,7 @@ const KanaModal: React.FC<ModelProps> = ({ isModalOpen, setIsModalOpen }) => {
   const typeStyles = {
     dark: {
       bg: "bg-darkGray-500 border border-white/10 ",
-      bgHead: " bg-white/[6%]",
+      bgHead: " bg-white/[6%] text-white",
     },
     light: {
       bg: "bg-[#FCFDFE] border border-[#E3E8EF] ",
@@ -55,7 +55,7 @@ const KanaModal: React.FC<ModelProps> = ({ isModalOpen, setIsModalOpen }) => {
               className={`header p-4 flex flex-row ${bgHead} justify-between rounded-t-2xl`}>
               <div >Preferences</div>
               <button onClick={() => setIsModalOpen(false)}>
-                <Xcircle className="h-4 w-4 text-white hover:text-red" />
+                <Xcircle className="h-5 w-5 hover:text-red-500" />
               </button>
             </div>
             <div className="p-4">content</div>
