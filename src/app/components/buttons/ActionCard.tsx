@@ -15,7 +15,7 @@ const ActionCard: React.FC<cardProbs> = ({
   btnLabel,
 }) => {
   return (
-    <div className="flex flex-col rounded-2xl border bg-darkGray-500 border-white/10">
+    <div className="flex flex-col rounded-2xl border text-white bg-darkGray-500 border-white/10">
       <div className="h-[160px] w-auto">{image}</div>
       <div className="flex flex-col px-6 py-4 gap-4">
         <div className="flex flex-row justify-between">

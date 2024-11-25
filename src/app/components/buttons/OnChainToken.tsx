@@ -20,7 +20,7 @@ const OnChainToken: React.FC<OnChainTokenProps> = ({
 
   return (
 <div
-  className={`flex flex-row gap-2 w-full rounded-2xl h-fit border p-4 ${isDarkMode ? 'bg-darkGray-500 hover:bg-darkGray-400  border-white/10' : ' text-klwhite-100 bg-klwhite-850 hover:bg-[#ffffff0f] border-gray-200 '} cursor-pointer`}
+  className={`flex flex-row gap-2 w-full rounded-2xl h-fit border p-4 ${isDarkMode ? 'bg-darkGray-500 hover:bg-darkGray-400  border-white/10  text-white' : ' text-klwhite-100 bg-klwhite-850 hover:bg-[#ffffff0f] border-gray-200 '} cursor-pointer`}
 >      {/* On-Chain and Base-Chain Images */}
       <div className="relative">
         {onChainImage}
