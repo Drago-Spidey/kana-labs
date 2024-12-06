@@ -1,10 +1,12 @@
 import React from "react";
+import useStore from '../../store/index';
 
 interface TopBarProps {
   page: "Swap" | "OPerps"; // Define the possible page types
 }
 
 const TopBar: React.FC<TopBarProps> = ({ page }) => {
+  const toggleDarkMode = useStore((state) => state.toggleDarkMode); 
   return (
     <div className="bg-klTbBg flex items-center justify-between p-3 h-[80px] z-[1] rounded-b-xl sticky top-0">
       {/* Balance Section */}
@@ -82,7 +84,7 @@ const TopBar: React.FC<TopBarProps> = ({ page }) => {
         </div>
 
         {/* Settings Icon */}
-        <div className="bg-klBtnBg px-4 py-4 flex rounded-2xl items-center hover:cursor-pointer">
+        <div className="bg-klBtnBg px-4 py-4 flex rounded-2xl items-center hover:cursor-pointer" onClick={toggleDarkMode}>
           <img src="/kana-labs/assets/settings.svg" alt="Settings Icon" />
         </div>
       </div>

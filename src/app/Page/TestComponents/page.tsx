@@ -20,6 +20,7 @@ import DiscountCard from "@/app/components/buttons/DiscountCard";
 import KanaDropdownButton from "@/app/components/buttons/KanaDropdownButton";
 import Input from "@/app/components/buttons/Input";
 import KanaModal from "@/app/components/buttons/KanaModal";
+import TokenCard from "@/app/components/buttons/TokenCard";
 const TestComponents: React.FC = () => {
   const [inputValue, setInputValue] = useState<string | number>("");
 
@@ -133,7 +134,7 @@ const TestComponents: React.FC = () => {
           onClick={() => {}}
         />
       </div>
-      <div className="flex flex-row w-full gap-4 p-4 mb-16 rounded-2xl  bg-[#F2F9F9]">
+      <div className="flex flex-row w-full gap-4 p-4 mb-16 rounded-2xl  bg-[#F2F9F9] lg:w-fit">
         <OnChainToken
           onChainImage={<DefaultImg />}
           baseChainImage={<DefaultSmall />}
